@@ -7,7 +7,7 @@ You can view the template here: [IEEE Conference Website Template](https://kashy
 
 ## Features
 - Homepage with an overview of the conference
-- Speakers page with profiles of keynote speakers
+- Speakers page with profiles of keynote speaker
 - Committee page with details of the organizing committee
 
 ## Technologies Used
