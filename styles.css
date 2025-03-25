@@ -3,10 +3,17 @@
     margin-top: 25px;
     margin-right: 50px;
     position: relative;
+    border: 5px solid transparent;
+    border-image: linear-gradient(45deg, #ff5733, #33ff57);
+    border-image-slice: 1;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
+
 
 .carousel-inner {
     height: auto;
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-text-fill-color: #FFD700;
     /* Set the height to 500 pixels */
 }
 body > div > a,
@@ -16,12 +23,95 @@ body > div > ul > li {
     text-decoration: none;
     line-height: 2;
     font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+
 }
+h1 {
+    font-size: 4rem;
+    background: linear-gradient(45deg, #0313f7, #ef5305, #ec0404);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 3s ease infinite;
+    text-align: center;
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+/* * { box-sizing: border-box; } 
+        .body { font-family: Arial, sans-serif; }
+        .carousel-container { position: relative; width: 80%; margin: auto; overflow: hidden; }
+        .carousel-slide { display: none; width: 100%; }
+        .carousel-slide img { width: 100%; }
+        .active { display: block; }
+        .prev, .next { position: absolute; top: 50%; transform: translateY(-50%); cursor: pointer; padding: 10px; background: rgba(0, 0, 0, 0.5); color: white; border: none; }
+        .prev { left: 10px; }
+        .next { right: 10px; }*/
+* { box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; border: 8px solid transparent;
+            border-image: linear-gradient(45deg, #5307d7, #d00b22);
+            border-image-slice: 1;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);}
+        .carousel-container { position: relative; width: 70%; margin: 10px auto; overflow: hidden; border-radius: 20px;}
+        .carousel-slide { display: none; width: 100%; height: 350px; }
+        .carousel-slide img { width: 100%; height: 100%; object-fit: cover; }
+        .active { display: block; }
+        
 .card {
     margin-bottom: 50px;
-    box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.1);
+    box-shadow: 2px 3px 4px 5px rgba(237, 86, 11, 0.1);
     border: none;
+    border: #5115de;
 }
+
+/* Default card styling */
+.card {
+    background-size: cover; /* Ensures the image covers the card */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    color: white; /* Ensures text readability */
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    min-height: 250px; /* Adjust height if necessary */
+}
+
+/* Overlay for better readability */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    border-radius: 10px;
+}
+
+/* Ensuring text appears above overlay */
+.card-body {
+    position: relative;
+    z-index: 1;
+}
+
+/* Assigning different background images to each card */
+.track-1 { background-image: url('https://i.pinimg.com/736x/8c/69/a0/8c69a0c899bfb5254633395a9017be79.jpg'); }
+.track-2 { background-image: url('https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk='); }
+.track-3 { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_bB7pNAE3VFwMHLAPXJMzwYvoIxr38OJ8GA&s'); }
+.track-4 { background-image: url('https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg'); }
+.track-5 { background-image: url('https://media.istockphoto.com/id/471926619/photo/moraine-lake-at-sunrise-banff-national-park-canada.jpg?s=612x612&w=0&k=20&c=mujiCtVk5QA697SD3d8V8BGmd91-8HlxCNHkolEA0Bo='); }
+.track-6 { background-image: url('https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg?cs=srgb&dl=pexels-pixabay-158063.jpg&fm=jpg'); }
+.track-7 { background-image: url('https://static.vecteezy.com/system/resources/thumbnails/036/226/872/small/ai-generated-nature-landscapes-background-free-photo.jpg'); }
+.track-8 { background-image: url('https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg'); }
+.track-9 { background-image: url('https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.jpg?s=612x612&w=0&k=20&c=i4HYO7xhao7CkGy7Zc_8XSNX_iqG0vAwNsrH1ERmw2Q='); }
+.track-10 { background-image: url('https://t4.ftcdn.net/jpg/02/56/10/07/360_F_256100731_qNLp6MQ3FjYtA3Freu9epjhsAj2cwU9c.jpg'); }
+.track-11 { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8o7SEaOtu3s1wu2h1A3s6sdjfe0j-zXKjkg&s'); }
+.track-12 { background-image: url('https://img.freepik.com/premium-photo/wide-angle-shot-single-tree-growing-clouded-sky-sunset-surrounded-by-grass_181624-22807.jpg'); }
+
 
 @media only screen and (max-width: 768px) {
     .navbar-brand {
@@ -32,8 +122,13 @@ body > div > ul > li {
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     scroll-behavior: smooth; /* Smooth scrolling effect */
+    background-image: url('https://img.freepik.com/premium-photo/free-abstract-colors-soft-gradient-pure-background_1264014-98511.jpg?semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
 /* Sticky Navbar */

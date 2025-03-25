@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-CompatiBle" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>International Conference on Sustainable AI</title>
+        <title style="font-family:Verdana, Geneva, Tahoma, sans-serif">International Conference on Sustainable AI</title>
 
         <!-- Bootstrap CSS -->
         <link
@@ -133,11 +133,37 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <br>
+
+        <div class="carousel-container">
+        <div class="carousel-slide active"><img src="https://www.monash.edu/__data/assets/image/0015/3421005/AI-and-Sustainability-banner11.jpg"></div>
+        <div class="carousel-slide"><img src="https://dp9eps5gd5xd0.cloudfront.net/images/Article_Images/ImageForArticle_701_17210111232974421.jpg"></div>
+        <div class="carousel-slide"><img src="https://itbrief.com.au/uploads/story/2024/02/17/img-o4m1R4lXNkCds4DR6DLxJj9p.webp"></div>
+        
+    </div>
+    <script>
+        let index = 0;
+        let slides = document.querySelectorAll(".carousel-slide");
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove("active"));
+            slides[n].classList.add("active");
+        }
+        function nextSlide() {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        }
+        function prevSlide() {
+            index = (index - 1 + slides.length) % slides.length;
+            showSlide(index);
+        }
+        setInterval(nextSlide, 3000);
+    </script>
 
         <!-- About -->
+         
         <div
             id="about"
-            style="margin: 50px; text-align: justify; text-decoration: none;">
+            style="margin: 50px; text-align: justify; text-decoration: none; ">
             <hr>
             <h2>About</h2>
             <p>"Sustainable AI" refers to the development and use of artificial intelligence
@@ -173,9 +199,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-lg-4 col-sm-12 d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card track-1">
                             <div class="card-body">
-                                <h3>Track 1: Ethics and Fairness in Machine Learning:</h3>
+                                <h3 style=>Track 1: Ethics and Fairness in Machine Learning:</h3>
                                 <ul>
                                     <li>Fairness and bias in machine learning algorithms</li>
                                     <li>Ethical considerations in data collection and usage</li>
@@ -186,7 +212,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-sm-12 d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card track-2">
                             <div class="card-body">
                                 <h3>Track 2: Machine learning for Social Good:</h3>
                                 <ul>
@@ -200,7 +226,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-sm-12 d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card track-3">
                             <div class="card-body">
                                 <h3>Track 3: Machine learning for Education and Outreach:</h3>
                                 <ul>
@@ -213,7 +239,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-sm-12 d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card track-4">
                             <div class="card-body">
                                 <h3>Track 4: Machine learning for Privacy and Security:</h3>
                                 <ul>
@@ -226,7 +252,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-sm-12 d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card track-5">
                             <div class="card-body">
                                 <h3>Track 5: Machine learning for Natural Language Processing for Society:</h3>
                                 <ul>
@@ -240,7 +266,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-sm-12 d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card track-6">
                             <div class="card-body">
                                 <h3>Track 6: Machine learning for Healthcare and Biomedical Applications:</h3>
                                 <ul>
@@ -254,7 +280,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-sm-12 d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card track-7">
                             <div class="card-body">
                                 <h3>Track 7: Machine Learning for Education:</h3>
                                 <ul>
@@ -268,7 +294,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-sm-12 d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card track-8">
                             <div class="card-body">
                                 <h3>Track 8: Machine learning for Social and Economic Impact:</h3>
                                 <ul>
@@ -282,7 +308,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-sm-12 d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card track-9">
                             <div class="card-body">
                                 <h3>Track 9: Machine learning in Agriculture and Food Security:</h3>
                                 <ul>
@@ -296,7 +322,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-sm-12 d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card track-10">
                             <div class="card-body">
                                 <h3>Track 10: Machine Learning in Urban Planning:</h3>
                                 <ul>
@@ -310,7 +336,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-sm-12 d-flex align-items-stretch">
-                        <div class="card">
+                        <div class="card track-11">
                             <div class="card-body">
                                 <h3>Track 11: Machine learning for Humanitarian Aid and Crisis Response:</h3>
                                 <ul>
@@ -324,7 +350,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-sm-12 d-flex align-items-stretch">
-                        <div class="card ">
+                        <div class="card track-12 ">
                             <div class="card-body">
                                 <h3>Track 12: Machine learning in Arts & Culture:</h3>
                                 <ul>
@@ -537,7 +563,7 @@
         <footer class="bg-dark" style="overflow: hidden;">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.412543749052!2d78.31685650993971!3d17.391978602605594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb94eba8ad7c87%3A0xb78f51ed556f7cc5!2sChaitanya%20Bharathi%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1708747363353!5m2!1sen!2sin"
-                width="100%"
+                width="99%"
                 height="250"
                 style="margin: 10px;"
                 loading="lazy"
@@ -547,21 +573,21 @@
                 <div class="row align-items-start">
                     <div class="col-md-4">
                         <h4>Technical Sponsors</h4>
-                        <ul style="list-style: none;">
+                        <ul style="list-style:inside;">
                             <li>Sponsor 1</li>
                             <li>Sponsor 2</li>
                         </ul>
                     </div>
                     <div class="col-md-4">
                         <h4>Promotional Sponsors</h4>
-                        <ul style="list-style: none;">
+                        <ul style="list-style: inside;">
                             <li>Sponsor 1</li>
                             <li>Sponsor 2</li>
                         </ul>
                     </div>
                     <div class="col-md-4">
                         <h4>Promotional Sponsors</h4>
-                        <ul style="list-style: none;">
+                        <ul style="list-style: inside;">
                             <li>Sponsor 1</li>
                             <li>Sponsor 2</li>
                         </ul>
