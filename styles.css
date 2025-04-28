@@ -9,7 +9,7 @@
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 #hyderabad-carousel img { 
-    filter: blur(10px);
+    filter: blur(0px);
 }
 
 
@@ -17,7 +17,7 @@
 .carousel-inner {
     height: auto;
     font-family: 'Times New Roman', Times, serif;
-    -webkit-text-fill-color: #FFD700;
+    -webkit-text-fill-color: #ffffff;
     /* Set the height to 500 pixels */
 }
 body > div > a,
@@ -30,15 +30,13 @@ body > div > ul > li {
     font-family: 'Times New Roman', Times, serif;
 
 }
-h1 {
-    font-size: 4rem;
-    background: linear-gradient(45deg, #8A2BE2,#00e0d1,#39ff14 );
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientAnimation 5s ease infinite;
-    text-align: center;
-  }
+/* .overlay-text h1 {
+    font-size: 1000px; /* Adjust size as you like */
+}
+
+.overlay-text p {
+    font-size: 24px; /* Adjust size as you like */
+} */
   
   @keyframes gradientAnimation {
     0% { background-position: 0% 50%; }
